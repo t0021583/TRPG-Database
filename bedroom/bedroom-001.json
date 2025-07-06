@@ -1,0 +1,139 @@
+{
+    "room_id": "bedroom-001",
+    "owner_id": "char-001",
+    "building": "黃家四層樓透天厝",
+    "location": {
+        "floor": "三樓",
+        "orientation": "東",
+        "structure": "長方形",
+        "note": "房間靠近陽台,房門在右側牆面"
+    },
+    "furniture": [
+        {
+            "furniture_id": "bed-001",
+            "name": "雙人床",
+            "position": "靠左側牆面",
+            "features": [
+                "深灰床單",
+                "木頭質感"
+            ]
+        },
+        {
+            "furniture_id": "bedside_table-001",
+            "name": "床頭櫃",
+            "position": "在床左側",
+            "features": [
+                "木頭質感"
+            ]
+        },
+        {
+            "furniture_id": "desk-001",
+            "name": "書桌",
+            "position": "朝向窗戶",
+            "features": [
+                "木頭質感"
+            ]
+        },
+        {
+            "furniture_id": "wardrobe-001",
+            "name": "衣櫃",
+            "position": "角落",
+            "features": [
+                "木頭質感",
+                "有附鏡面"
+            ]
+        }
+    ],
+    "items": [
+        {
+            "item_id": "notebook-001",
+            "name": "黑色記事本",
+            "location": "desk-001",
+            "desc": "皮質封面的黑色記事本,封面貼有貓咪貼紙",
+            "meaning": "敘事期間,用於紀錄的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "condom-001",
+            "name": "保險套",
+            "location": "bedside_table-001",
+            "desc": "白色保險套,0.01mm厚度",
+            "meaning": "敘事期間,用於性愛場合的互動道具",
+            "quantity": 5
+        },
+        {
+            "item_id": "fetish_handcuffs-001",
+            "name": "情趣手銬",
+            "location": "wardrobe-001",
+            "desc": "金屬製黑色手銬,附帶粉色絨毛",
+            "meaning": "敘事期間,用於性愛場合的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "blue_hairband-001",
+            "name": "深藍色髮帶",
+            "location": "desk-001",
+            "desc": "深藍色布質髮帶,有淡淡的柚香香味",
+            "meaning": "敘事期間,用於與黃怡萱情感連結的互動道具,與深紅色髮帶成對",
+            "quantity": 1
+        },
+        {
+            "item_id": "pillow-001",
+            "name": "白色枕頭",
+            "location": "bed-001",
+            "desc": "白色的羽絨枕頭,觸感柔軟",
+            "meaning": "敘事期間,用於睡眠的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "table_lamp-001",
+            "name": "圓形小檯燈",
+            "location": "bedside_table-001",
+            "desc": "圓形的小檯燈,鐵製品",
+            "meaning": "敘事期間,用於照亮房間的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "charging_cable-001",
+            "name": "手機充電線",
+            "location": "bedside_table-001",
+            "desc": "黑色的手機充電線,重量輕巧",
+            "meaning": "敘事期間,用於手機充電的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "ballpen-001",
+            "name": "鋼珠筆",
+            "location": "bedside_table-001",
+            "desc": "黑色外殼的鋼珠筆,筆蓋有磨損",
+            "meaning": "敘事期間,用於書寫筆記的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "glasses-001",
+            "name": "黑框眼鏡",
+            "location": "desk-001",
+            "desc": "黑色粗框設計的近視眼鏡",
+            "meaning": "敘事期間,用於穿戴在身上的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "macBook_Air-001",
+            "name": "MacBook Air",
+            "location": "desk-001",
+            "desc": "銀色的MacBook筆電,文書機",
+            "meaning": "敘事期間,用於查詢資料及上網瀏覽的互動道具",
+            "quantity": 1
+        }
+    ],
+    "behavior_triggers": [
+        {
+            "trigger": "privacy_violation",
+            "effect": "若房內道具被他人擅自取用,說話語氣會變得壓抑且視線冰冷"
+        },
+        {
+            "trigger": "dominance_amplification",
+            "effect": "與黃怡萱獨處於房間時,說話語氣與肢體動作會有支配傾向"
+        }
+    ]
+}

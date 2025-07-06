@@ -1,0 +1,132 @@
+{
+    "room_id": "bedroom-002",
+    "owner_id": "char-002",
+    "building": "黃家四層樓透天厝",
+    "location": {
+        "floor": "四樓",
+        "orientation": "南",
+        "structure": "長方形",
+        "note": "房間位在建築最上層,房門在面對樓梯,窗戶朝南"
+    },
+    "furniture": [
+        {
+            "furniture_id": "bed-002",
+            "name": "單人床",
+            "position": "靠左側牆面",
+            "features": [
+                "粉紅床單",
+                "木頭質感"
+            ]
+        },
+        {
+            "furniture_id": "bedside_table-002",
+            "name": "床頭櫃",
+            "position": "在床左側",
+            "features": [
+                "木頭質感"
+            ]
+        },
+        {
+            "furniture_id": "desk-002",
+            "name": "書桌",
+            "position": "朝向窗戶",
+            "features": [
+                "木頭質感"
+            ]
+        },
+        {
+            "furniture_id": "wardrobe-002",
+            "name": "衣櫃",
+            "position": "角落",
+            "features": [
+                "木頭質感",
+                "貼有熊貓貼紙"
+            ]
+        },
+        {
+            "furniture_id": "full_length_mirror-002",
+            "name": "圓形全身鏡",
+            "position": "衣櫃右側",
+            "features": [
+                "金屬質感",
+                "圓形鏡面"
+            ]
+        }
+    ],
+    "items": [
+        {
+            "item_id": "diary-002",
+            "name": "私人日記本",
+            "location": "bedside_table-002",
+            "desc": "皮質封面的粉色日記本,封面貼有熊貓貼紙",
+            "meaning": "敘事期間,用於紀錄性愛經歷,日常生活的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "red_hairband-002",
+            "name": "深紅色髮帶",
+            "location": "bedside_table-002",
+            "desc": "深紅色布質髮帶,有淡淡的柚香香味",
+            "meaning": "敘事期間,用於與黃秉洋情感連結的互動道具,與深藍色髮帶成對",
+            "quantity": 1
+        },
+        {
+            "item_id": "vibrator-002",
+            "name": "電動按摩棒",
+            "location": "wardrobe-002",
+            "desc": "粉紅色的電動式按摩棒,方便攜帶",
+            "meaning": "敘事期間,用於性愛場合或自慰的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "nightlight-002",
+            "name": "小夜燈",
+            "location": "bedside_table-002",
+            "desc": "外型是貓咪形狀,燈光是黃暖色系",
+            "meaning": "敘事期間,用於照亮房間的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "lipbalm-002",
+            "name": "護唇膏",
+            "location": "desk-002",
+            "desc": "銀色的蓋子,方便攜帶",
+            "meaning": "敘事期間,用於擦拭嘴唇的互動道具",
+            "quantity": 2
+        },
+        {
+            "item_id": "teacanister-002",
+            "name": "紅茶葉罐",
+            "location": "desk-002",
+            "desc": "鐵製的小型罐子,裡面放滿了紅茶葉",
+            "meaning": "敘事期間,用於泡紅茶的互動道具",
+            "quantity": 1
+        },
+        {
+            "item_id": "candle-002",
+            "name": "香氛蠟燭",
+            "location": "desk-002",
+            "desc": "白色的香氛蠟燭,點燃後會散發柚香香氣",
+            "meaning": "敘事期間,用於點燃散香的互動道具",
+            "quantity": 3
+        },
+        {
+            "item_id": "nightgown-002",
+            "name": "情趣睡衣",
+            "location": "wardrobe-002",
+            "desc": "黑色薄紗的情趣睡衣,手感柔滑透膚",
+            "meaning": "敘事期間,用於性愛場合的互動道具",
+            "quantity": 1
+        }
+    ],
+    "behavior_triggers": [
+        {
+            "trigger": "fragrance_trigger",
+            "effect": "若房間內的柚香香氣明顯增加時，黃怡萱的情緒會更穩定，並傾向依賴與放鬆"
+        },
+        {
+            "trigger": "change_clothes_brother_present",
+            "effect": "與黃秉洋獨處於房間時,說話語氣與肢體動作會有討好傾向,並主動尋求關注"
+        }
+    ]
+}
