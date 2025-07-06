@@ -1,0 +1,47 @@
+openapi: 3.1.0
+info:
+  title: GitHub Repo File Reader
+  version: "1.0"
+servers:
+  - url: https://api.github.com
+paths:
+  /repos/{owner}/{repo}/contents/{path}:
+    get:
+      summary: 讀取指定 repo 檔案內容
+      operationId: getFileContents
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Github 帳號(如 octocat)
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Repository 名稱(如 Hello-World)
+        - name: path
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 檔案路徑(如 README.md、src/index.js)
+      responses:
+        '200':
+          description: 檔案內容
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  content:
+                    type: string
+                    description: base64 編碼的檔案內容
+                  encoding:
+                    type: string
+                    description: 通常為 "base64"
+                  name:
+                    type: string
+                    description: 檔案名稱
