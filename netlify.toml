@@ -1,0 +1,11 @@
+[build]
+command = "npm install"
+publish = "."
+
+[functions]
+directory = "netlify/functions"
+
+[[redirects]]
+from = "/github/folder"
+to = "/.netlify/functions/github-folder"
+status = 200
