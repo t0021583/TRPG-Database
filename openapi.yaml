@@ -1,0 +1,87 @@
+openapi: 3.1.0
+info:
+  title: GitHub Folder & File API
+  version: 1.0.0
+  description: |
+    用於存取 GitHub 上特定 repository 資料夾與檔案內容，支援單一檔案與目錄批量操作。可串接 GPT Action 直接抓取指定 JSON 等內容。
+servers:
+  - url: https://trpg0703.netlify.app
+paths:
+  /github/folder:
+    get:
+      operationId: getFolderFiles
+      summary: 取得指定 GitHub repo 路徑下所有檔案的內容（每一筆都需原樣完整貼出，不可解析或摘要）
+      parameters:
+        - name: repo
+          in: query
+          required: true
+          schema:
+            type: string
+          example: t0021583/TRPG-Database
+        - name: path
+          in: query
+          required: true
+          schema:
+            type: string
+          example: char
+        - name: branch
+          in: query
+          required: false
+          schema:
+            type: string
+          example: main
+      responses:
+        "200":
+          description: |
+            返回多個檔案內容。請將每個 content 欄位以 markdown code block 完整貼出，嚴禁任何摘要、解包、解釋、重組。
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    filename:
+                      type: string
+                      description: 檔案名稱
+                    content:
+                      type: string
+                      description: 必須原樣貼出，不可解析、摘要或格式化
+  /github/file:
+    get:
+      operationId: getSingleFile
+      summary: 取得 GitHub 上單一檔案內容（必須原樣完整貼出 content，不可解析、摘要或修改）
+      parameters:
+        - name: repo
+          in: query
+          required: true
+          schema:
+            type: string
+          example: t0021583/TRPG-Database
+        - name: file
+          in: query
+          required: true
+          schema:
+            type: string
+          example: char/char-003.json
+        - name: branch
+          in: query
+          required: false
+          schema:
+            type: string
+          example: main
+      responses:
+        "200":
+          description: |
+            回傳該檔案內容。請將 content 欄位以 markdown code block 完整貼出，不可解析、摘要、修改、或產生新結構。
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  filename:
+                    type: string
+                    description: 檔案名稱
+                  content:
+                    type: string
+                    description: 必須原樣貼出，不可解析、摘要或格式化
